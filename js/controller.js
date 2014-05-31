@@ -19,3 +19,27 @@ $scope.grade = "F";
 }
 }
 
+function CalculaterCtrl($scope){
+	$scope.is_show_result = false;
+	$scope.calculaterPlus= function()
+		{
+			$scope.is_show_result = true;
+			$scope.result = $scope.inputone + $scope.inputtwo 
+		}
+		$scope.calculaterMinus= function()
+		{
+			$scope.is_show_result = true;
+			$scope.result = $scope.inputone - $scope.inputtwo 
+		}
+		$scope.calculaterMultiplied= function()
+		{
+			$scope.is_show_result = true;
+			$scope.result = $scope.inputone * $scope.inputtwo 
+		}
+		$scope.calculaterDivided_by= function()
+		{
+			$scope.is_show_result = true;
+			$scope.result = $scope.inputone / $scope.inputtwo 
+		}
+}
+

@@ -1,11 +1,13 @@
-<form ng-submit="calculate()">
+<form ng-submit="calculaye()">
 <input type="number" ng-model="score">
 </form>
-<button>Caculuter</button>
-</br>
-<div hg-hide="is_show_grade">
- พิมพ์สิครับคะแนนนะ
+
+
+<button ng-click="calculate()" >Caculute</button><br/>
+
+<div ng-hide="is_show_grade">
+พิพม์สิครับ คะแนนน่ะ
 </div>
-<div hg-show="is_show_grade">
+<div ng-show="is_show_grade" >
 Your score is {{score}} you got grade {{grade}}
 </div>

@@ -10,7 +10,10 @@ app.config(function($routeProvider) {
       $routeProvider.when('/', {
          templateUrl: 'pages/home.html',
          controller: 'HomeCtrl'
-      })
+      }).when('/cal', { 
+         templateUrl: 'pages/calculater.html',
+         controller: 'CalculaterCtrl'
+      });
       // ...
   });
 

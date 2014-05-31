@@ -1,0 +1,32 @@
+
+<table>
+	<th>
+		<input type="number" ng-model="inputone">
+	</th>
+	
+	<th>
+		<input type="number" ng-model="inputtwo">
+	</th>
+	<th>
+<button ng-click="calculaterPlus()" >+</button><br/>
+	</th>
+	<th>
+<button ng-click="calculaterMinus()" >-</button><br/>
+	</th>
+	<th>
+<button ng-click="calculaterMultiplied()" >*</button><br/>
+	</th>
+	<th>
+<button ng-click="calculaterDivided_by()" >/</button><br/>
+	</th>
+</table>
+
+
+
+
+<div ng-hide="is_show_grade">
+พิพม์สิจะได้คำนวนให้ กดเลือกเครื่องหมายด้วยนะ
+</div>
+<div ng-show="is_show_result" >
+Result {{result}}
+</div>
