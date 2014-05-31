@@ -1,3 +1,4 @@
+//angular.module('myApp', ["mobile-angular-ui"]);
 var app = angular.module('grader', [
   "ngRoute",
   "mobile-angular-ui",
