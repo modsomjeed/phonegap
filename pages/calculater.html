@@ -1,11 +1,11 @@
 
 <table>
 	<th>
-		<input type="number" ng-model="inputone">
+		<input type="number" ng-model="inputone" ng-change="is_show_result=false">
 	</th>
 	
 	<th>
-		<input type="number" ng-model="inputtwo">
+		<input type="number" ng-model="inputtwo" ng-change="is_show_result=false">
 	</th>
 	<th>
 <button ng-click="calculaterPlus()" >+</button><br/>
@@ -24,7 +24,7 @@
 
 
 
-<div ng-hide="is_show_grade">
+<div ng-hide="is_show_result">
 พิพม์สิจะได้คำนวนให้ กดเลือกเครื่องหมายด้วยนะ
 </div>
 <div ng-show="is_show_result" >
