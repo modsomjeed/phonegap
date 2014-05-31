@@ -42,4 +42,18 @@ function CalculaterCtrl($scope){
 			$scope.result = $scope.inputone / $scope.inputtwo 
 		}
 }
+function LoadpicCtrl($scope){
+		$scope.test = function(a)
+{
+/*if(typeof(a) != 'object')
+alert(a);
+else
+alert(a.age);*/
+if(angular.isObject(a))
+alert(a.age);
+else
+alert(a)
+}
+$scope.people = {name: 'KWANG', age: 22}
+}
 

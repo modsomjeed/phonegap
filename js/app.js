@@ -13,6 +13,9 @@ app.config(function($routeProvider) {
       }).when('/cal', { 
          templateUrl: 'pages/calculater.html',
          controller: 'CalculaterCtrl'
+      }).when('/loadpic', { 
+         templateUrl: 'pages/loadpic.html',
+         controller: 'LoadpicCtrl'
       });
       // ...
   });
