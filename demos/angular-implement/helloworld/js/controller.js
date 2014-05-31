@@ -12,7 +12,7 @@ function ProfileCtrl ($scope) {
 	$scope.salary = 15000
 	$scope.user = {
 		name : "ModSoMJEED",
-		age : "22"
-					}
+		age : "22",
+		food : "shabu" }
 
 }
