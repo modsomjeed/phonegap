@@ -80,7 +80,7 @@ $scope.minus = function(item){
 }
 }
 
-function QuestionCtrl($scope){
+function QuestionCtrl($scope,$rootScope,$location){
 	$scope.question_index = 0;
 $scope.questions = [
 {img: "http://i286.photobucket.com/albums/ll98/nookeer/533993-img-3.gif", answer:"บขส" },
@@ -97,18 +97,26 @@ $scope.answer = function()
 {
 console.log('answer ' + $scope.input);
 console.log($scope.questions[$scope.question_index].answer)
+
 if($scope.input == $scope.questions[$scope.question_index].answer)
 {
 $scope.question_index++;
 if($scope.question_index < $scope.questions.length)
 $scope.img = $scope.questions[$scope.question_index].img;
 }
+
 $scope.input = "";
+
 if($scope.question_index == $scope.questions.length)
-alert("you win");
+{
+	$rootScope.is_win = true;
+	$location.path('/winner');
 }
 
- 	
+}
+
+}
+function WinCtrl(){
 
 }
 

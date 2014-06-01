@@ -19,6 +19,9 @@ app.config(function($routeProvider) {
       }).when('/question', { 
          templateUrl: 'pages/question.html',
          controller: 'QuestionCtrl'
+      }).when('/winner', { 
+         templateUrl: 'pages/winner.html',
+         controller: 'WinCtrl'
       });
       // ...
   });
