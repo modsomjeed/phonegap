@@ -16,6 +16,9 @@ app.config(function($routeProvider) {
       }).when('/loadpic', { 
          templateUrl: 'pages/loadpic.html',
          controller: 'LoadpicCtrl'
+      }).when('/question', { 
+         templateUrl: 'pages/question.html',
+         controller: 'QuestionCtrl'
       });
       // ...
   });

@@ -80,3 +80,37 @@ $scope.minus = function(item){
 }
 }
 
+function QuestionCtrl($scope){
+	$scope.question_index = 0;
+$scope.questions = [
+{img: "http://i286.photobucket.com/albums/ll98/nookeer/533993-img-3.gif", answer:"บขส" },
+{img: "http://i286.photobucket.com/albums/ll98/nookeer/533993-img-5.jpg", answer:"ลึกลับ" },
+{img: "http://i286.photobucket.com/albums/ll98/nookeer/533993-img-4.jpg", answer:"ไปยาลใหญ่" },
+{img: "http://i286.photobucket.com/albums/ll98/nookeer/533993-img-2.gif", answer:"ใหม่แกะกล่อง" },
+{img: "http://i286.photobucket.com/albums/ll98/nookeer/533993-img-1.gif", answer:"ชมพูทวีป" }
+]
+
+$scope.img = $scope.questions[$scope.question_index].img;
+
+
+$scope.answer = function()
+{
+console.log('answer ' + $scope.input);
+console.log($scope.questions[$scope.question_index].answer)
+if($scope.input == $scope.questions[$scope.question_index].answer)
+{
+$scope.question_index++;
+if($scope.question_index < $scope.questions.length)
+$scope.img = $scope.questions[$scope.question_index].img;
+}
+$scope.input = "";
+if($scope.question_index == $scope.questions.length)
+alert("you win");
+}
+
+ 	
+
+}
+
+
+
